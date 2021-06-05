@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     position: absolute;
-    /* background-image: url(images/stars.png); */
+    background-image: url(images/stars.png);
     background-repeat: repeat-x, repeat-y;
 }
 
