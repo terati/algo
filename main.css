@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    height: 100vh;
+    position: absolute;
+    background-image: url(/images/stars.png);
+    background-repeat: repeat-x, repeat-y;
+}
+
+canvas {
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    font-family: 'Montserrat';
+    font-size: 7em;
+    color: white;
+    text-transform: uppercase;
+    width: auto;
+    line-height: .8em;
+    border: 5px solid white;
+    padding: .2em;
+}
