@@ -21,6 +21,7 @@ window.addEventListener('resize', () => {
 
     camera.updateProjectionMatrix();
 })
+//testing
 
 //Circle
 // var geometry = new THREE.CircleGeometry(1.6,202);
