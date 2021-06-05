@@ -40,7 +40,7 @@ const SEGMENTS = 52;
 const RINGS = 52;
 // planet Atmosphere
 var geometry = new THREE.SphereGeometry( RADIUS, SEGMENTS, RINGS );
-const texture = new THREE.TextureLoader().load('algo/images/globe_im.jpg');
+const texture = new THREE.TextureLoader().load('images/globe_im.jpg');
 const white_base = new THREE.TextureLoader().load('images/white_back.jpg');
 const normalmap = new THREE.TextureLoader().load('images/globe_depth.jpg');
 const specularmap = new THREE.TextureLoader().load('images/specmap.jpg');
