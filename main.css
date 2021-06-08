@@ -14,8 +14,8 @@ h1 {
     position: absolute;
     top: 1em;
     left: 2em;
-    font-family: 'Montserrat';
-    font-size: 7em;
+    font-family: 'Courier New', monospace;
+    font-size: 16em;
     color: white;
     text-transform: uppercase;
     width: auto;
@@ -23,3 +23,30 @@ h1 {
     border: 5px solid white;
     padding: .2em;
 } 
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+}
+
+li {
+    float: left;
+  }
+  
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgb(241, 227, 227);
+}
