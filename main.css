@@ -49,8 +49,10 @@ li a {
     }
 
 li a:hover {
-    background-color: rgb(241, 227, 227);
-    color: black;
+    /* background-color: rgb(241, 227, 227); */
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
 }
 
 
