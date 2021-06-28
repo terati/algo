@@ -115,33 +115,33 @@ var render = function() {
 var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
 
-function onMouseClick(event) {
-    event.preventDefault();
-    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-    raycaster.setFromCamera(mouse, camera);
-    var intersects = raycaster.intersectObjects(scene.children, true);
-    var flag = 0;
-    var counter = 0;
-    if (counter > 0 & counter < 10000){
-        counter++;
-    } else {
-        counter = 0;
-    }
-    if (intersects.length > 0 & flag == 0 & counter == 0) {
-        for ( var i = 0; i < intersects.length; i++ ) {
-            flag = 1;
-            this.t1 = new TimelineMax();
-            this.t1.to(intersects[i].object.scale, 0, {x: 0.9, y: 0.9, z: 0.9, ease: Expo.easeOut})
-            this.t1.to(intersects[i].object.scale, 1, {x: 1, y: 1, z: 1, ease: Expo.easeOut})
-            this.t1.to(intersects[i].object.scale, 1, {x: 0.9, y: 0.9, z: 0.9, ease: Expo.easeOut})
-            flag = 0; 
-        }
-        counter++;
-    }
+// function _onMouseClick(event) {
+//     event.preventDefault();
+//     mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+//     mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+//     raycaster.setFromCamera(mouse, camera);
+//     var intersects = raycaster.intersectObjects(scene.children, true);
+//     var flag = 0;
+//     var counter = 0;
+//     if (counter > 0 & counter < 10000){
+//         counter++;
+//     } else {
+//         counter = 0;
+//     }
+//     if (intersects.length > 0 & flag == 0 & counter == 0) {
+//         for ( var i = 0; i < intersects.length; i++ ) {
+//             flag = 1;
+//             this.t1 = new TimelineMax();
+//             this.t1.to(intersects[i].object.scale, 0, {x: 0.9, y: 0.9, z: 0.9, ease: Expo.easeOut})
+//             this.t1.to(intersects[i].object.scale, 1, {x: 1, y: 1, z: 1, ease: Expo.easeOut})
+//             this.t1.to(intersects[i].object.scale, 1, {x: 0.9, y: 0.9, z: 0.9, ease: Expo.easeOut})
+//             flag = 0; 
+//         }
+//         counter++;
+//     }
 
-}
-window.addEventListener('click', onMouseClick);
+// }
+// window.addEventListener('click', _onMouseClick);
 // window.addEventListener('mousemove', onMouseMove);
 
 render();

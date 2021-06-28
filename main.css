@@ -1,13 +1,11 @@
 body {
+    padding-top: 30;
     margin: 0;
     height: 100vh;
+    z-index: -999;
     position: absolute;
     background-image: url(images/stars.png);
     background-repeat: repeat-x, repeat-y;
-}
-
-canvas {
-    display: block;
 }
 
 h1 {
@@ -20,12 +18,13 @@ h1 {
     text-transform: uppercase;
     width: auto;
     line-height: .8em;
-    /* border: 5px solid white; */
-    /* padding: .2em; */
+    border: 5px solid white; 
+    padding: .2em; 
 } 
 
 ul {
-    position: fixed;
+    z-index: 1; 
+    position: fixed; 
     top: 0;
     width: 100%;
     list-style-type: none;
@@ -33,12 +32,13 @@ ul {
     padding: 0;
     overflow: hidden;
     /* background-color: #333; */
-}
+
+} 
 
 li {
     float: left;
-  }
-  
+}
+
 li a {
     display: block;
     color: white;
@@ -46,20 +46,21 @@ li a {
     padding: 20px 16px;
     font-family: 'Courier New', monospace;
     text-decoration: none;
-    }
+}
 
 li a:hover {
-    /* background-color: rgb(241, 227, 227); */
+    /* background-color: rgb(241, 227, 227);  */
     text-decoration: underline;
     color: white;
     font-weight: bold;
-}
+} 
 
 
 #top {
-    /* position: absolute; */
-    /* top: 1em; */
-    /* left: 2em; */
+    position: absolute; 
+    z-index: 9999;
+    top: 1em; 
+    left: 2em; 
     font-family: 'Courier New', monospace;
     font-size: 3em;
     color: white;
@@ -69,7 +70,8 @@ li a:hover {
     text-align: center;
     border: 5px solid white;
     padding: .2em;
-} 
+}   
+
 
 
 .titleanimate1 {
@@ -90,11 +92,10 @@ li a:hover {
 .letters::after {
     content: "|";
     animation: blink 1s infinite;
-}
+} 
 
 @keyframes blink {
     0%, 100% {opacity: 1;}
     50% {opacity: 0;}
-}
-
+} 
 

@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="main.css">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="main.css">
+  <title>Tim's Portfolio</title>
 </head>
+
+<nav>
+    <ul> 
+        <!-- <li id="top">Tim's Portfolio</li> -->
+        <li><a href="home">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="projects">Projects</a></li>
+        <li style="float:right"><a href="#experimental">Experimental</a></li>
+    </ul>
+</nav>
+
+
 <body>
-  <!-- <h1>HEADER</h1> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <p class="letters"></p> 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-  <script src="globe.js"></script>
-
-  <ul> 
-    <li id="top">Tim's Portfolio</li>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a class="active" href="#contact">Contact</a></li>
-    <li><a class="active" href="#about">About</a></li>
-    <li><a class="active" href="#projects">Projects</a></li>
-    <li style="float:right"><a class="active" href="#experimental">Experimental</a></li>
-  </ul>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <h1 class="titleanimate1"></h1>
-  <p class="letters"></p>
-
-
- 
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script id="globe" src="globe.js"></script>
+    
 <script>
 var typeText = document.querySelector("p.letters")
 var startText = "CODING IS "
@@ -40,35 +37,35 @@ var index = 0, isAdding = true
 console.log(typeText)
 
 function playAnim() {
-    setTimeout(function () {
-        typeText.innerText = textToBeTyped.slice(0, index)
-        typeText.innerText = startText.concat(typeText.innerText)
-        if (isAdding) {
-            if (index > textToBeTyped.length){
-                isAdding = false
-                setTimeout(function () {
-                    playAnim()
-                }, 2000)
-                return
-            } else {
-                index++
-            }
+setTimeout(function () {
+    typeText.innerText = textToBeTyped.slice(0, index)
+    typeText.innerText = startText.concat(typeText.innerText)
+    if (isAdding) {
+        if (index > textToBeTyped.length){
+            isAdding = false
+            setTimeout(function () {
+                playAnim()
+            }, 2000)
+            return
         } else {
-            if (index === 0) {
-                isAdding = true
-                let num = Math.floor(Math.random() * 4)
-                textToBeTyped = words[num]
-            } else {
-                index--
-            }
+            index++
         }
-        playAnim()
-    }, 120)
+    } else {
+        if (index === 0) {
+            isAdding = true
+            let num = Math.floor(Math.random() * 4)
+            textToBeTyped = words[num]
+        } else {
+            index--
+        }
+    }
+    playAnim()
+}, 120)
 }
 
 playAnim()
 
-</script>
+</script> 
 
  
 
