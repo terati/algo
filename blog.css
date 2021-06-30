@@ -84,3 +84,23 @@ li a:hover {
     height:100%;
     position:absolute;
 }
+
+
+
+
+
+
+
+article {
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
