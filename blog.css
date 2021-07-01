@@ -37,6 +37,7 @@ li a:hover {
 
 .sidenav {
     /* overflow-y: scroll; */
+    float:left;
     height: 100%;
     padding-top: 60px;
     background-color:rgb(227, 226, 229);
@@ -81,9 +82,12 @@ li a:hover {
 
 
 .content {
+    float: left;
     height:100%;
-    position:absolute;
-}
+    width: 100px;
+    position:fixed;
+    background-color: aqua;
+} 
 
 
 
@@ -91,12 +95,12 @@ li a:hover {
 
 
 
-article {
+/* article {
     float: left;
     width: 70%;
     height: 100%;
     background-color: aqua;
-}
+} */
 
 
 
