@@ -12,8 +12,11 @@ var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
 renderer.shadowMap.enabled = true;
 renderer.setClearColor(0x000000, 0);
 renderer.setSize(window.innerWidth,window.innerHeight);
+// renderer.setSize(window.innerWidth,500);
 
-document.body.appendChild(renderer.domElement);
+var tmp = document.getElementById('globeDiv');
+console.log(tmp);
+tmp.appendChild(renderer.domElement);
 
 window.addEventListener('resize', () => {
     renderer.setSize(window.innerWidth, window.innerHeight);

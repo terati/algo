@@ -1,3 +1,13 @@
+:root {
+    color: white;
+    font-family: "Poppins";
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 30;
     margin: 0;
@@ -12,7 +22,7 @@ h1 {
     position: absolute;
     top: 1em;
     left: 2em;
-    font-family: 'Courier New', monospace;
+    font-family: inherit;
     font-size: 16em;
     color: white;
     text-transform: uppercase;
@@ -44,7 +54,7 @@ li a {
     color: white;
     text-align: center;
     padding: 20px 16px;
-    font-family: 'Courier New', monospace;
+    font-family: inherit;
     text-decoration: none;
 }
 
@@ -61,7 +71,7 @@ li a:hover {
     z-index: 9999;
     top: 1em; 
     left: 2em; 
-    font-family: 'Courier New', monospace;
+    font-family: inherit;
     font-size: 3em;
     color: white;
     text-transform: uppercase;
@@ -86,7 +96,7 @@ li a:hover {
     width: 100%;
     text-align: center;
     font-size:  36px;
-    font-family: monospace, 'Arial Narrow Bold', sans-serif;
+    font-family: inherit;
 }
 
 .letters::after {

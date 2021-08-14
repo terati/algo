@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="main.css">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tim's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="projectGrid.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim's Portfolio</title>
 </head>
 
 <nav>
@@ -14,7 +18,7 @@
         <li><a href="home">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about">About</a></li>
-        <li><a href="projects">Projects</a></li>
+        <li><a href="#projectHead">Projects</a></li>
         <li style="float:right"><a href="#experimental">Experimental</a></li>
     </ul>
 </nav>
@@ -26,8 +30,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <div id="globeDiv"> </div>
     <script id="globe" src="globe.js"></script>
-    
 <script>
 var typeText = document.querySelector("p.letters")
 var startText = "CODING IS "
@@ -66,9 +70,88 @@ setTimeout(function () {
 playAnim()
 
 </script> 
+    <h2 id='projectHead'> Some Projects  </h2>
+    <section class='projectSection'>
+        <div class='projectGrid'>
+            <div class='sector' id='s1'>
+                <img 
+                id="im1"
+                class="project-image"
+                src="./images/flap.png"
+                alt="project"
+                />
+                <p class='gridText'> Flappy Bird Clone </p>
+                <div id="panel1" class="panel" > My implementation of flappy bird in Javascript. </div>
+            </div>
+            
 
- 
+            <div class='sector' id='s2'>
+                    <img
+                    height=300px
+                    id="im2"
+                    class="project-image"
+                    src="./images/pathJS.png"
+                    alt="project"
+                    />
+                    <p class='gridText'> A* Algorithm Implementation </p>
+                    <div id="panel2" class="panel" > An implementation of the A star path finding algorithm visualized in Javascript. </div>
+            </div>
 
+            <div class='sector' id='s3'>
+                <img
+                height=300px
+                id="im3"
+                class="project-image"
+                src="./images/conv.png"
+                alt="project"
+                />
+                <p class='gridText'> Image Convolution </p>
+                <div id="panel3" class="panel" > A javascript implementation of a 3x3 kernel image convolution. You can select common 
+                    kernels to apply or use a user inputted kernel. The bottom shows a histogram of the color channels that compose
+                the selected image. </div>
+            </div>
+
+            <div class='sector' id='s4'>
+                <img
+                class="project-image"
+                src="./images/tmp.png"
+                alt="project"
+                background-color="white"
+                />
+                <p class='gridText'> Coming Soon... </p>
+                <div id="panel4" class="panel" > Coming Soon... </div>
+            </div>
+
+            <div class='sector' id='s5'>
+                <img
+                class="project-image"
+                src="./images/tmp.png"
+                alt="project"
+                />
+                <p class='gridText'> Coming Soon... </p>
+                <div id="panel5" class="panel" > Coming Soon... </div>
+            </div>
+
+        </div>
+            <!-- <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="project"
+            />
+
+            <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="project"
+            /> -->
+            
+                
+        </div>
+    </section>
+
+    <div>
+    <div>
+    <script src="./projectGrid.js"></script>
 
 
 </body>
