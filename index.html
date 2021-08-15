@@ -12,24 +12,29 @@
     <title>Tim's Portfolio</title>
 </head>
 
-<nav>
-    <ul> 
+<nav id='navbar'>
+    <ul > 
+        <!-- <div > </div> -->
         <!-- <li id="top">Tim's Portfolio</li> -->
-        <li><a href="home">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="#projectHead">Projects</a></li>
-        <li style="float:right"><a href="#experimental">Experimental</a></li>
+        <li id='log' style="font-family: Brush Script MT; font-size: large;"> TW </li>
+        <li><a href="home">HOME</a></li> |
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        <li><a href="about">ABOUT</a></li> |
+        <li><a href="#projectHead">PROJECTS</a></li>
+        <!-- <li style="float:right"><a href="#experimental">Experimental</a></li> -->
     </ul>
+    <!-- <div id='rect'> </div> -->
 </nav>
 
 
 <body>
+    <div id='BG'> </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <p class="letters"></p> 
+    <!-- <p class="letters"></p>  -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="http://gamingJS.com/Tween.js"></script>
     <div id="globeDiv"> </div>
     <script id="globe" src="globe.js"></script>
 <script>
@@ -38,7 +43,6 @@ var startText = "CODING IS "
 var words = ["FUN!", "COOL!", "EXCITING!", "AWESOME!"]
 var textToBeTyped = words[0]
 var index = 0, isAdding = true
-console.log(typeText)
 
 function playAnim() {
 setTimeout(function () {
@@ -47,9 +51,9 @@ setTimeout(function () {
     if (isAdding) {
         if (index > textToBeTyped.length){
             isAdding = false
-            setTimeout(function () {
-                playAnim()
-            }, 2000)
+            // setTimeout(function () {
+            //     playAnim()
+            // }, 2000)
             return
         } else {
             index++
@@ -64,13 +68,14 @@ setTimeout(function () {
         }
     }
     playAnim()
-}, 120)
+}, 320)
 }
 
-playAnim()
+// playAnim()
 
 </script> 
     <h2 id='projectHead'> Some Projects  </h2>
+    <p id='projectHeadp'> Click to read some more.</p>
     <section class='projectSection'>
         <div class='projectGrid'>
             <div class='sector' id='s1'>
@@ -81,7 +86,9 @@ playAnim()
                 alt="project"
                 />
                 <p class='gridText'> Flappy Bird Clone </p>
-                <div id="panel1" class="panel" > My implementation of flappy bird in Javascript. </div>
+                <div id="panel1" class="panel" > My implementation of flappy bird in Javascript. The right side shows the 
+                    local highest three scores and the last 5 runs underneath that. 
+                </div>
             </div>
             
 
@@ -94,7 +101,9 @@ playAnim()
                     alt="project"
                     />
                     <p class='gridText'> A* Algorithm Implementation </p>
-                    <div id="panel2" class="panel" > An implementation of the A star path finding algorithm visualized in Javascript. </div>
+                    <div id="panel2" class="panel" > An implementation of the A star path finding algorithm visualized in Javascript. 
+                        I used a heap library for the implementation.
+                    </div>
             </div>
 
             <div class='sector' id='s3'>
@@ -138,10 +147,48 @@ playAnim()
         </div>
     </section>
 
-    <div>
-    <div>
-    <script src="./projectGrid.js"></script>
+    <div class='title'>
+        HI IM TIMOTHY
+    </div>
 
+    <div class='linkWrap'>
+        <div id='l1' class='sidelinks'>
+            <!-- //cool -->
+        </div>
+    
+        <div id='l2' class='sidelinks'>
+            <a href="https://github.com/terati" target="_blank"> 
+                <img src='./images/git.png' alt='github' width='20' height='20'>
+            </a> 
+        </div>
+    
+        <div id='l3' class='sidelinks' style="font: size 30px;">
+            <a href="https://www.linkedin.com/in/timothy-wong-573ba2149/" target="_blank" style="text-decoration: none; color: white;"> 
+                in
+            </a>
+        </div>
+    </div>
+    
+
+
+    <div id='goUp'>
+        <a href="#navbar">
+            <img
+            height=50px
+            src="./images/goTop.jpg"
+            alt="goUp"
+            />
+        </a>
+    <div>
+
+
+
+
+
+    <script src="./projectGrid.js"></script>
+    <script src="./load.js"></script>
 
 </body>
+
+
 </html>

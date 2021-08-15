@@ -46,3 +46,28 @@ $("#im3").hover(
     }
 )
 
+
+
+
+var scroll;
+$('body').scroll(function(event){ 
+    var scroll = $('body').scrollTop();
+    // console.log(scroll);
+    if (scroll > 10){
+        showSect();
+    } else {
+        hideSect();
+    }
+});
+
+showSect = () => {
+    $('#goUp').show();
+    $('.linkWrap').hide();
+    $('.title').hide();
+}
+
+hideSect = () => {
+    $('#goUp').hide();
+    $('.linkWrap').show();
+    $('.title').show();
+}
