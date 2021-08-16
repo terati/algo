@@ -1,0 +1,24 @@
+
+#artGrid {
+    margin-top: 500px;
+    margin-left: -50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+}
+
+.sec {
+
+}
+
+
+.artim {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+

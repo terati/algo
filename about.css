@@ -1,0 +1,29 @@
+
+#bg1 {
+    height: 150vh;
+    width: 100%;
+    /* background-color: green; */
+    /* background-image: url('./images/black_bg1.jpg'); */
+    background-attachment: fixed;
+    background: linear-gradient(rgba(10, 10, 10, 0), rgba(0, 0, 0, 0.664) )
+}
+
+#aboutDiv {
+    position: relative;
+    top: 25%;
+    margin: 0 auto;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(54, 50, 50);
+    padding: 30px 50px;
+    font-family: "Poppins";
+}
+
+#aboutText {
+    width: 50%;
+    font-family: inherit;
+    font-size: 20px;
+    margin: auto;
+}

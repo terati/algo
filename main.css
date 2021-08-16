@@ -18,6 +18,8 @@ body {
     /* background-color: black; */
     background-image: url(images/stars.png);
     background-repeat: repeat-x, repeat-y;  
+    background-attachment: fixed;
+    background-position: 0%;
     /* background-image: radial-gradient(circle, white 30%, black 40%); */
 }
 

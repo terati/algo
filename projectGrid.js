@@ -19,6 +19,10 @@ $("#s5").click(function(){
     $("#panel5").slideToggle("linear");
 });
 
+$("#s6").click(function(){
+    $("#panel6").slideToggle("linear");
+});
+
 $("#im1").hover(
     function() {
         $(this).attr("src", "./images/flap.gif")
