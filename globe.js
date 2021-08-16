@@ -124,7 +124,7 @@ var t = 0;
 var flag = 0;
 var TL = new TimelineMax({paused: true});
 TL.to(atmosphere_mesh.scale, 8.0, {x: 2, y: 2, z: 2, ease: Expo.easeOut});
-TL.to(planet_mesh.scale, 8.0, {x: 2.01, y: 2.01, z: 2.01, ease: Expo.easeOut}, 0);
+TL.to(planet_mesh.scale, 8.0, {x: 2.035, y: 2.035, z: 2.035, ease: Expo.easeOut}, 0);
 
 var TL1 = new TimelineMax({paused: true});
 TL1 = TL1.to(atmosphere_mesh.position, 2, {x: -1, z: -0.5, ease: Expo.easeOut});

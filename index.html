@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="shooting.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="projectGrid.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
@@ -37,6 +38,20 @@
     <script src="http://gamingJS.com/Tween.js"></script>
     <div id="globeDiv"> </div>
     <script id="globe" src="globe.js"></script>
+
+
+<div class="a a1"></div>
+<div class="a a2"></div>
+
+<div class="b b1"></div>
+<div class="b b2"></div>
+
+<div class="c c1"></div>
+<div class="c c2"></div>
+
+<div class="d d1"></div>
+<div class="d d2"></div>
+
 <script>
 var typeText = document.querySelector("p.letters")
 var startText = "CODING IS "
@@ -74,12 +89,13 @@ setTimeout(function () {
 // playAnim()
 
 </script> 
-    <h2 id='projectHead'> Some Projects  </h2>
-    <p id='projectHeadp'> Click to read some more.</p>
+    <h2 id='projectHead'> SOME PROJECTS  </h2>
+    <p id='projectHeadp'> CLICK FOR TO FOR SLIDEOUT.</p>
     <section class='projectSection'>
         <div class='projectGrid'>
             <div class='sector' id='s1'>
                 <img 
+                height=300px
                 id="im1"
                 class="project-image"
                 src="./images/flap.png"
@@ -87,7 +103,7 @@ setTimeout(function () {
                 />
                 <p class='gridText'> Flappy Bird Clone </p>
                 <div id="panel1" class="panel" > My implementation of flappy bird in Javascript. The right side shows the 
-                    local highest three scores and the last 5 runs underneath that. 
+                    local highest three scores and the last five runs underneath that. 
                 </div>
             </div>
             
@@ -100,9 +116,9 @@ setTimeout(function () {
                     src="./images/pathJS.png"
                     alt="project"
                     />
-                    <p class='gridText'> A* Algorithm Implementation </p>
+                    <p class='gridText'> A* Algorithm Visualized </p>
                     <div id="panel2" class="panel" > An implementation of the A star path finding algorithm visualized in Javascript. 
-                        I used a heap library for the implementation.
+                        I used an external heap library to help with the implementation.
                     </div>
             </div>
 
@@ -123,22 +139,27 @@ setTimeout(function () {
             <div class='sector' id='s4'>
                 <img
                 class="project-image"
-                src="./images/tmp.png"
+                height=300
+                src="./images/weather.png"
                 alt="project"
                 background-color="white"
                 />
-                <p class='gridText'> Coming Soon... </p>
-                <div id="panel4" class="panel" > Coming Soon... </div>
+                <p class='gridText'> Weather Web App </p>
+                <div id="panel4" class="panel" > Used the OpenWeather API to create a JS web app to get the weather. </div>
             </div>
 
             <div class='sector' id='s5'>
                 <img
+                id="im5"
+                height=300px
                 class="project-image"
-                src="./images/tmp.png"
+                src="./images/kirby.png"
                 alt="project"
                 />
-                <p class='gridText'> Coming Soon... </p>
-                <div id="panel5" class="panel" > Coming Soon... </div>
+                <p class='gridText'> Kirby SystemVerilog </p>
+                <div id="panel5" class="panel" > I wrote it in SystemVerilog for the DE-115 FPGA. Background were compressed with Python scripts and flashed into 2MB SRAM while character images 
+                    were programmed into on-chip memory. The health system was not fully debugged so chracters can't "die".
+                </div>
             </div>
 
         </div>

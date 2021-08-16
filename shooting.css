@@ -1,0 +1,142 @@
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+@keyframes anim0
+{
+    from {
+        left: -100px;
+        top: -100px;
+    }
+    to {
+        left: calc( 100% + 100px );
+        top: calc( 100% + 100px );
+    }
+}
+
+@keyframes anim1
+{
+    from {
+        left: -300px;
+        top: 300px;
+    }
+    to {
+        left: calc( 100% + 300px );
+        top: calc( 100% + 300px );
+    }
+}
+
+@keyframes anim2
+{
+    from {
+        left: 90%;
+        top: 300px;
+    }
+    to {
+        left: calc( 100% + 300px );
+        top: calc( 100% + 100px );
+    }
+}
+
+@keyframes anim3
+{
+    from {
+        left: 200px;
+        top: 300px;
+    }
+    to {
+        left: calc( 100% + 300px );
+        top: calc( 100% + 300px );
+    }
+}
+
+
+
+.d::before, .c::before, .b::before, .a::before{
+    position:absolute;
+    display:block;
+    content:"";
+    width:100px;
+    right:1px;
+    top:0px;
+    height:1px;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(255,255,255,0.4) 100%); 
+    transform: rotate(45deg);
+}
+
+.a{
+    z-index: -9999;
+    position:fixed;
+    animation-name:anim0;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.b{
+    z-index: -9999;
+    position:fixed;
+    animation-name:anim1;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.c{
+    z-index: -9999;
+    position:fixed;
+    animation-name:anim2;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.d{
+    z-index: -9999;
+    position:fixed;
+    animation-name:anim3;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+.a1{
+  animation-duration:10s;
+  top:0%;
+  left:50%;
+}
+.a2{
+  animation-duration:5s;
+  top:0%;
+  left:-20%;
+}
+
+
+.b1{
+    animation-duration:21s;
+}
+.b2{
+    animation-duration:7s;
+    top: 0%;
+    left:80%;
+}
+
+
+.c1{
+    animation-duration:15s;
+}
+.c2{
+    animation-duration:7s;
+    top:00%;
+    left:80%;
+}
+
+
+.d1{
+    animation-duration:8s;
+    top:0%;
+    left:80%;
+}
+.d2{
+    animation-duration:7s;
+    top:0%;
+    left:80%;
+}

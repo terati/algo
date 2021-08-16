@@ -46,7 +46,14 @@ $("#im3").hover(
     }
 )
 
-
+$("#im5").hover(
+    function() {
+        $(this).attr("src", "./images/kirby.gif")
+    },
+    function() {
+        $(this).attr("src", "./images/kirby.png")
+    }
+)
 
 
 var scroll;
