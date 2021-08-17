@@ -208,6 +208,12 @@ li a:hover {
     animation: rotateLog;
     animation-duration: 2s;
     animation-timing-function: ease;
+
+    transition: transform 500ms;
+}
+
+#log:hover {
+    transform: rotate(180deg);
 }
 
 @keyframes rotateLog {

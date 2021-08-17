@@ -52,7 +52,7 @@
     color: black;
     background-color: rgba(34, 34, 34, 0.5);
     border: none;
-    display: none;
+    /* display: none; */
     background-color: white;
     border-radius: 0 0 20px 0px;
     text-align: center;
@@ -167,8 +167,9 @@
     background-image: linear-gradient(170deg, transparent 20%, rgba(12, 11, 11, 0.0) 40%,rgba(12, 11, 11, 0.0) 60%, rgb(255, 255, 255) 100%),
                         linear-gradient(175deg, transparent 20%, rgba(12, 11, 11, 0.0) 40%,rgb(59, 56, 56) 80%, rgb(255, 255, 255) 100%);
     padding-top: 90px;
-    font-size: 3rem;
-    font-family: "space";
+    font-size:6rem;
+    font-weight: bold;
+    font-family: "Poppins";
     text-align: left;
     padding-left: 30px;
 }
